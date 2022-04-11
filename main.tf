@@ -31,6 +31,10 @@ resource "snowflake_warehouse" "warehouse" {
 provider "snowflake" {
     alias = "security_admin"
     role  = "SECURITYADMIN"
+	account  = "gy63269"
+	username = "tf-snow"
+	region   = "australia-east.azure"
+	private_key_path = "./snowflake_tf_snow_key.p8"
 }
 
 
